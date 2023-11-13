@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TeamExpo</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="product-list.html" class="nav-item nav-link">Quiz</a>
+                            <a href="my-account.html" class="nav-item nav-link">My Account</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">More Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item active">Login & Register</a>
+                                    <a href="Question.html" class="dropdown-item">Question</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Login</a>
+                                    <a href="#" class="dropdown-item">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="https://www.logomaker.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kh...CCrBRGnBfOwXs1M3EMoAJtlikkjvVq8fo+" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="wishlist.html" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span> </span>
+                            </a>
+                            <a href="cart.html" class="btn cart">
+                                <i img src="https://icons8.com/icon/kDoeg22e5jUY/male-user"></i>
+                                <span>👤</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End --> 
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container-fluid">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Quiz</a></li>
+                    <li class="breadcrumb-item active">Login & Register</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        <!-- Login Start -->
+    </head>
+    <body>
+    
+    <div class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://github.com/mindmaster17/teamexpo" >TeamExpo</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse"  >
+        <ul class="nav navbar-nav navbar-right">
+             <li><a href="#" id="logout" style="display: none;">Log Out</a></li>
+        </ul>
+    </div>
+    </div>
+    <br>
+    <div class="container">	
+      <form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data" >
+      <div class="row">
+    
+        <div class="col-sm-4">
+            <div class="form-group">
+              <label for="username">Name</label>
+              <input type="text" name="username" id="username" class="form-control" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+              <label for="password" >Password</label>
+              <input type="password" name="password" id="password" class="form-control"  placeholder="Enter your password">
+            </div>
+            <button type="button" id="register" name="register" class="btn btn-success">Register Now</button>
+        </div><!-- end col -->
+          
+              </div>
+            <button type="button" id="google" name="google" class="btn btn-success">Google</button>
+
+
+        </div>
+
+	</div>
+	</form>
+
+	<form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data" >
+	<div class="col-sm-4 text-dj">
+		
+		<div class="">
+	      <label for="email">Email</label>
+		  <input type="text" name="login_email" id="login_email" class="form-control" placeholder="Enter your email">
+		</div>
+		
+		<div class="t">
+	      <label for="password">Password</label>
+		  <input type="password" name="login_password" id="login_password" class="form-control"  placeholder="Enter your password">
+		</div>
+		<button type="button" id="login" name="login"  class="btn btn-success">Login</button>
+	</div><!-- end col -->
+	
+  </div><!--  end row -->		
+  </form>
+</div>
+<br>
+<center> <a href="https://github.com/mindmaster17/teamexpo">TeamExpo</a></center>
+</body>
+        <!-- Login End -->
+        
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Get in Touch</h2>
+                            <div class="Question-info">
+                                <p><i class="fa fa-map-marker"></i>TeamExpo</p>
+                                <p><i class="fa fa-envelope"></i>email@example.com</p>
+                                <p><i class="fa fa-phone"></i>123456789</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Follow Us</h2>
+                            <div class="Question-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Company Info</h2>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                  
+                
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>We Accept:</h2>
+                            <img src="img/payment-method.png" alt="Payment Method" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                            <h2>Secured By:</h2>
+                            <img src="img/godaddy.svg" alt="Payment Security" />
+                            <img src="img/norton.svg" alt="Payment Security" />
+                            <img src="img/ssl.svg" alt="Payment Security" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright &copy; <a href="https://github.com/mindmaster17">TeamExpo</a>. All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-md-6 template-by">
+                        <p> By <a href="https://github.com/mindmaster17">TeamExpo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->       
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+        import { getAuth, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, signInWithRedirect } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+  
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries getDatabase
+  
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCkNJFimfRBFgwiFRCNDtTPlo8g-2JIc-M",
+           authDomain: "login-page-c3c64.firebaseapp.com",
+           databaseURL: "https://login-page-c3c64-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "login-page-c3c64",
+            storageBucket: "login-page-c3c64.appspot.com",
+            messagingSenderId: "426921518510",
+            appId: "1:426921518510:web:98a3252f91b0fdeaa5943f",
+            measurementId: "G-SKKHTLF0BH"
+        };
+  
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+         const provider = new GoogleAuthProvider()
+        console.log(app);
+  
+        
+  
+              //----- New Registration code start
+      document.getElementById("register").addEventListener("click", function () {
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+          var username = document.getElementById("username").value;
+  
+          // For adding Realtime Database
+          createUserWithEmailAndPassword(auth, email, password)
+              .then((res) => {
+              let user = {
+                  username: username,
+                  email: email,
+                  password: password,
+              };
+  
+              const db = getDatabase();
+              set(ref(db, `users/${res.user.uid}`), user)
+                  .then(() => {
+                  alert("new user is registered");
+                  window.location = "index.html";
+                  })
+                  .catch((err) => {
+                  console.log("err=>", err);
+                  });
+              })
+              .catch((err) => {
+              console.log("err=>", err);
+              });
+  
+          // For new registration
+          createUserWithEmailAndPassword(auth, email, password)
+              .then((userCredential) => {
+              const user = userCredential.user;
+              console.log(user);
+              alert("Registration successfully!!");
+              })
+              .catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              console.log(errorMessage);
+              alert(error);
+              });
+          });
+          function writeUserData( name, email, imageUrl) {
+            const db = getDatabase();
+            set(ref(db, 'users/' + userId), {
+              username: name,
+              email: email,
+              profile_picture : imageUrl,
+            });
+          }
+          
+          
+          //----- End
+  
+  
+        //----- Login code start	  
+        document.getElementById("login").addEventListener("click", function() {
+            var email =  document.getElementById("login_email").value;
+            var password = document.getElementById("login_password").value;
+  
+            signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Signed in 
+              const user = userCredential.user;
+              console.log(user);
+              alert(user.email+" Login successfully!!!");
+              document.getElementById('logout').style.display = 'block';
+              // ...
+            })
+            .catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              console.log(errorMessage);
+              alert(errorMessage);
+            });		  		  
+        });
+        //----- End
+  
+        //----- Logout code start	  
+        document.getElementById("logout").addEventListener("click", function() {
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                console.log('Sign-out successful.');
+                alert('Sign-out successful.');
+                document.getElementById('logout').style.display = 'none';
+              }).catch((error) => {
+                // An error happened.
+                console.log('An error happened.');
+              });		  		  
+        });
+        //----- End
+  
+      </script>
+  
+</html>
