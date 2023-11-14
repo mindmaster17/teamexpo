@@ -10,7 +10,7 @@ Long Description about project. This project do that. This project is awesome...
 ## Team Id
 teamexpo
 ## Link to product walkthrough
-[link to video]
+[https://www.loom.com/share/138c0d415c2c467ab7db99fe716a2bc0?sid=5a7b3644-18e8-4ccd-bf96-46b0cf34cb11]
 ## How it Works ?
 1. Explaining the working of project
 2. Embed video of project demo
