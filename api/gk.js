@@ -15,7 +15,7 @@ let correctAnswer = "",
 
 // load question from API
 async function loadQuestion() {
-    const APIUrl = 'https://opentdb.com/api.php?amount=10&category=18&difficulty=easyhttps://opentdb.com/api.php?amount=10&category=18&difficulty=easy';
+    const APIUrl = 'https://opentdb.com/api.php?amount=10&category=9https://opentdb.com/api.php?amount=10&category=9';
     const APIsports = 'https://opentdb.com/api.php?amount=10&category=21&difficulty=easyhttps://opentdb.com/api.php?amount=10&category=21&difficulty=easy';
     const APIhistory = 'https://opentdb.com/api.php?amount=10&category=23&difficulty=easyhttps://opentdb.com/api.php?amount=10&category=23&difficulty=easy';
     const APIanimals = 'https://opentdb.com/api.php?amount=10&category=27&difficulty=easyhttps://opentdb.com/api.php?amount=10&category=27&difficulty=easy';
