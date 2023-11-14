@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form with 7 fields</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 5px;
+		}
+
+		input[type=text], input[type=email], input[type=tel], input[type=number], select, textarea {
+			width: 75%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			resize: none;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			width: auto;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<label for="fname">Questin code</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="question">Question</label>
+			<textarea id="question" name="question" placeholder="Write something.." style="height:200px" required></textarea>
+
+			<label for="lname">Option 1</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your Option 1.." required>
+
+            <label for="lname">Option 2 </label>
+			<input type="text" id="lname" name="lastname" placeholder="Your Option 2.." required>
+
+            <label for="lname">Option 3</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your Option 3.." required>
+
+            <label for="lname">Option 4</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your Option 4.." required>
+
+            <label for="lname">Ans option</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your Option Ans.." required>
+
+			
+			
+
+			<input type="submit" value="Submit" onclick="alert('Submitted')">Delete</button>  
+			<button type="button" onclick="alert('Edit button clicked')">Edit</button>
+			<button type="button" 
+		</form>
+	</div>
+</body>
+</html>
