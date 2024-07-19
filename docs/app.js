@@ -1,3 +1,8 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
+import { getDatabase, ref, update } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js";
+
 // Your web app's Firebase configuration
  const firebaseConfig = {
             apiKey: "AIzaSyCkNJFimfRBFgwiFRCNDtTPlo8g-2JIc-M",
@@ -9,6 +14,39 @@
             appId: "1:426921518510:web:98a3252f91b0fdeaa5943f",
             measurementId: "G-SKKHTLF0BH"
         };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const database = getDatabase(app);
+
+// Login function
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            const userId = user.uid;
+
+            update(ref(database, 'users/' + userId), {
+                last_login: Date.now()
+            });
+
+            alert('Login successful!');
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(`Error: ${errorMessage}`);
+        });
+});
+
+
+
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
